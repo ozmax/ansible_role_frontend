@@ -1,0 +1,9 @@
+---
+
+- name: Npm packages are installed locally.
+  become: no
+  local_action: command yarn
+
+- name: Frontend is built locally.
+  become: no
+  local_action: command grunt prod
